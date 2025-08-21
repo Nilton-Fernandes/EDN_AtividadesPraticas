@@ -8,11 +8,14 @@ Use os seguintes dados:
 O programa deve calcular e exibir os valores convertidos, arredondando 
 para duas casas decimais."""
 
-reais = 100
+
+reais = 100 #float(input("Digite o valor em reais para conversão:"))
 dolar = 5.20
 euro = 6.15
 
 conv_real_dolar = reais / dolar
 cone_real_euro = reais / euro
 
-print(f"Valores. \nReais: {reais:.2f}. \nDolar: {conv_real_dolar:.2f}. \nEuro: {cone_real_euro:.2f}.")
+print(f"Valores. \nReais: {reais:.2f}.")
+print(f"{reais:.2f} Reais para Dolar: {conv_real_dolar:.2f}")
+print(f"{reais:.2f} Reais para Euro: {cone_real_euro:.2f}")
