@@ -19,17 +19,19 @@ else:
 
         elif unidade_de_origem == "C" and unidade_de_destino == "F":
             resultado = f"{(temperatura * 9/5) + 32:.2f} °F"
+
         elif unidade_de_origem == "C" and unidade_de_destino == "K":
             resultado = f"{temperatura + 273.15:.2f} K"
 
         elif unidade_de_origem == "F" and unidade_de_destino == "C":
             resultado = f"{(temperatura - 32) * 5/9:.2f} °C"
+            
         elif unidade_de_origem == "F" and unidade_de_destino == "K":
             resultado = f"{((temperatura - 32) * 5/9) + 273.15:.2f} K"
 
         elif unidade_de_origem == "K" and unidade_de_destino == "C":
             resultado = f"{temperatura - 273.15:.2f} °C"
-        else:  # K → F
+        else: 
             resultado = f"{((temperatura - 273.15) * 9/5) + 32:.2f} °F"
 
 print("Resultado:", resultado)
