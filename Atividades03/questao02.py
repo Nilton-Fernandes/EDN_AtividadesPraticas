@@ -12,7 +12,7 @@ Para os demais cenários: classificacao = "Obeso"""
 peso = float(input("Esse programa calcula o IMC\nDigite seu peso: "))
 altura = float(input("Digite sua altura:"))
 
-imc = peso/altura**2
+imc = peso/(altura*altura)
 
 if imc <18.5:
     classificacao = "Abaixo do peso."
